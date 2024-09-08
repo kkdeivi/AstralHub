@@ -633,27 +633,24 @@ coroutine.wrap(SDQS_fake_script)()
 local function BOOBGRG_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 	-- LocalScript
+	-- LocalScript
 	local player = game.Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoidRootPart = character.HumanoidRootPart
-	local button = script.Parent -- Referência ao botão que será pressionado (ex: TextButton)
+	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	local button = script.Parent -- Referência ao botão (TextButton) que será pressionado
 
 	-- Função que teleporta o jogador local para o HumanoidRootPart de outros jogadores
 	local function teleportToAllPlayers()
-		for _, obj in pairs(workspace:GetChildren()) do
-			-- Verifica se o objeto é um modelo e se possui um Humanoid e HumanoidRootPart
-			if obj:IsA("Model") and obj:FindFirstChild("HumanoidRootPart") then
-				local targetPlayer = game.Players:GetPlayerFromCharacter(obj)
+		for _, obj in pairs(game.Players:GetPlayers()) do
+			-- Ignorar o jogador local
+			if obj ~= player then
+				local targetCharacter = obj.Character
+				if targetCharacter and targetCharacter:FindFirstChild("HumanoidRootPart") then
+					local targetHumanoidRootPart = targetCharacter.HumanoidRootPart
 
-				-- Se for um modelo de jogador e não o próprio jogador local
-				if targetPlayer and targetPlayer ~= player then
-					local targetHumanoidRootPart = obj.HumanoidRootPart
-
-					if targetHumanoidRootPart then
-						-- Teleporta o jogador local para a posição do HumanoidRootPart do jogador alvo
-						humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
-						wait(0.5) -- Espera 1 segundo antes de teleportar para o próximo jogador
-					end
+					-- Teleporta o jogador local para o HumanoidRootPart do outro jogador
+					humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
+					wait(1) -- Espera 1 segundo antes de teleportar para o próximo jogador
 				end
 			end
 		end
