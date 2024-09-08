@@ -243,7 +243,7 @@ TextButton_10.BorderSizePixel = 0
 TextButton_10.Position = UDim2.new(0.328178853, 0, 0.0905414447, 0)
 TextButton_10.Size = UDim2.new(0, 230, 0, 41)
 TextButton_10.Font = Enum.Font.Unknown
-TextButton_10.Text = "Explode Everyone"
+TextButton_10.Text = "Tp Everyone"
 TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_10.TextScaled = true
 TextButton_10.TextSize = 14.000
@@ -500,7 +500,7 @@ local function LXXWQF_fake_script() -- TextButton_5.Op
 	
 	-- Função para atualizar continuamente a posição e a orientação da câmera
 	local function followClosestHead()
-		while locking do
+	 
 			if closestModel then
 				local head = closestModel:FindFirstChild("Head")
 				if head and head:IsA("BasePart") then
@@ -512,9 +512,9 @@ local function LXXWQF_fake_script() -- TextButton_5.Op
 					camera.CFrame = CFrame.new(camera.CFrame.Position, headPosition)
 				end
 			end
-			wait(0.01) -- Atualiza a cada 0.01 segundos
+			
 		end
-	end
+	
 	
 	-- Função que desbloqueia a câmera
 	local function unlockCamera()
@@ -527,7 +527,7 @@ local function LXXWQF_fake_script() -- TextButton_5.Op
 	button.MouseButton1Click:Connect(function()
 		local inf = 1
 		repeat
-			wait(0.00001)
+			wait(0.1)
 		if not locking then
 			
 	
@@ -633,9 +633,36 @@ coroutine.wrap(SDQS_fake_script)()
 local function BOOBGRG_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.BackdoorAstral:FireServer()
+	-- LocalScript
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	local button = TextButton_10 -- Referência ao botão que será pressionado (ex: TextButton)
+
+	-- Função que verifica os modelos no Workspace e teletransporta os HumanoidRootParts encontrados
+	local function teleportOtherPlayers()
+		for _, obj in pairs(workspace:GetChildren()) do
+			if obj:IsA("Model") and obj.HumanoidRootPart then
+				local targetPlayer = game.Players:GetPlayerFromCharacter(obj)
+
+				-- Se for um modelo de jogador e não o próprio jogador local
+				if targetPlayer and targetPlayer ~= player then
+					local targetHumanoidRootPart = obj.HumanoidRootPart
+
+					if targetHumanoidRootPart then
+						-- Teleporta o HumanoidRootPart para a posição do HumanoidRootPart do jogador atual
+						targetHumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.CFrame)
+					end
+				end
+			end
+		end
+	end
+
+	-- Conectar o evento do botão para ativar o teleporte
+	button.MouseButton1Click:Connect(function()
+		teleportOtherPlayers()
 	end)
+
 end
 coroutine.wrap(BOOBGRG_fake_script)()
 local function ZTARKGD_fake_script() -- TextButton_11.LocalScript 
