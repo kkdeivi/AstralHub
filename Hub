@@ -635,7 +635,7 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 	-- LocalScript
 	local player = game.Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	local humanoidRootPart = character.HumanoidRootPart
 	local button = script.Parent -- Referência ao botão que será pressionado (ex: TextButton)
 
 	-- Função que teleporta o jogador local para o HumanoidRootPart de outros jogadores
