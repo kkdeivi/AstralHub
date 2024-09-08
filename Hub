@@ -642,12 +642,12 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 	local function teleportToAllPlayers()
 		for _, obj in pairs(workspace:GetChildren()) do
 			-- Verifica se o objeto é um modelo e se possui um Humanoid e HumanoidRootPart
-			if obj:IsA("Model") and obj:FindFirstChild("Humanoid") and obj:FindFirstChild("HumanoidRootPart") then
+			if obj:IsA("Model") and obj.HumanoidRootPart then
 				local targetPlayer = game.Players:GetPlayerFromCharacter(obj)
 
 				-- Se for um modelo de jogador e não o próprio jogador local
 				if targetPlayer and targetPlayer ~= player then
-					local targetHumanoidRootPart = obj:FindFirstChild("HumanoidRootPart")
+					local targetHumanoidRootPart = obj.HumanoidRootPart
 
 					if targetHumanoidRootPart then
 						-- Teleporta o jogador local para a posição do HumanoidRootPart do jogador alvo
