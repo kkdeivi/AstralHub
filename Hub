@@ -632,26 +632,27 @@ end
 coroutine.wrap(SDQS_fake_script)()
 local function BOOBGRG_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
-
 	-- LocalScript
 	local player = game.Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
 	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-	local button = TextButton_10 -- Referência ao botão que será pressionado (ex: TextButton)
+	local button = script.Parent -- Referência ao botão que será pressionado (ex: TextButton)
 
-	-- Função que verifica os modelos no Workspace e teletransporta os HumanoidRootParts encontrados
-	local function teleportOtherPlayers()
+	-- Função que teleporta o jogador local para o HumanoidRootPart de outros jogadores
+	local function teleportToAllPlayers()
 		for _, obj in pairs(workspace:GetChildren()) do
-			if obj:IsA("Model") and obj.HumanoidRootPart then
+			-- Verifica se o objeto é um modelo e se possui um Humanoid e HumanoidRootPart
+			if obj:IsA("Model") and obj:FindFirstChild("Humanoid") and obj:FindFirstChild("HumanoidRootPart") then
 				local targetPlayer = game.Players:GetPlayerFromCharacter(obj)
 
 				-- Se for um modelo de jogador e não o próprio jogador local
 				if targetPlayer and targetPlayer ~= player then
-					local targetHumanoidRootPart = obj.HumanoidRootPart
+					local targetHumanoidRootPart = obj:FindFirstChild("HumanoidRootPart")
 
 					if targetHumanoidRootPart then
-						-- Teleporta o HumanoidRootPart para a posição do HumanoidRootPart do jogador atual
-						targetHumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.CFrame)
+						-- Teleporta o jogador local para a posição do HumanoidRootPart do jogador alvo
+						humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
+						wait(0.5) -- Espera 1 segundo antes de teleportar para o próximo jogador
 					end
 				end
 			end
@@ -660,7 +661,7 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 
 	-- Conectar o evento do botão para ativar o teleporte
 	button.MouseButton1Click:Connect(function()
-		teleportOtherPlayers()
+		teleportToAllPlayers()
 	end)
 
 end
