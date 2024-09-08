@@ -243,7 +243,7 @@ TextButton_10.BorderSizePixel = 0
 TextButton_10.Position = UDim2.new(0.328178853, 0, 0.0905414447, 0)
 TextButton_10.Size = UDim2.new(0, 230, 0, 41)
 TextButton_10.Font = Enum.Font.Unknown
-TextButton_10.Text = "Tp Everyone"
+TextButton_10.Text = "Explode Everyone"
 TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_10.TextScaled = true
 TextButton_10.TextSize = 14.000
@@ -632,44 +632,11 @@ end
 coroutine.wrap(SDQS_fake_script)()
 local function BOOBGRG_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
-	-- LocalScript
 
-	local player = game.Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoidRootPart = character
-	
-
-	-- Função para teletransportar outros jogadores
-	local function teleportOtherPlayers()
-		for _, obj in pairs(workspace:GetChildren()) do
-			if obj:IsA("Model") and obj:FindFirstChild("Humanoid") and obj:FindFirstChild("HumanoidRootPart") then
-				local targetPlayer = game.Players:GetPlayerFromCharacter(obj)
-
-				-- Verifica se o modelo é de um jogador e não o próprio jogador local
-				if targetPlayer and targetPlayer ~= player then
-					local targetHumanoidRootPart = obj:FindFirstChild("HumanoidRootPart")
-
-					if targetHumanoidRootPart then
-						-- Teleporta o HumanoidRootPart do jogador para o HumanoidRootPart do player atual
-						targetHumanoidRootPart.CFrame = humanoidRootPart.CFrame
-					end
-				end
-			end
-		end
-	end
-
-	-- Exemplo: Teleporta ao pressionar uma tecla
-	
-		 TextButton_10.MouseButton1Click:Connect(function()
-			teleportOtherPlayers()
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.BackdoorAstral:FireServer()
 	end)
-
-	
 end
-
-
-	
-
 coroutine.wrap(BOOBGRG_fake_script)()
 local function ZTARKGD_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
