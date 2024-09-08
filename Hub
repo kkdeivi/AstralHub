@@ -650,7 +650,7 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 
 					-- Teleporta o jogador local para o HumanoidRootPart do outro jogador
 					humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
-					wait(1) -- Espera 1 segundo antes de teleportar para o próximo jogador
+					wait(0.6) -- Espera 1 segundo antes de teleportar para o próximo jogador
 				end
 			end
 		end
