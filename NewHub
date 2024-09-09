@@ -82,7 +82,7 @@ local ButtonTPOverTheServer = SecondTab:CreateButton({
 })
 
 
-local InputTPPlayer = Tab:CreateInput({
+local InputTPPlayer = SecondTab:CreateInput({
    Name = "TP To Target,
    PlaceholderText = "Insert Target",
    RemoveTextAfterFocusLost = false,
