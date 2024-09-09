@@ -54,7 +54,7 @@ local Toggle = MainTab:CreateToggle({
   if Value == true then
 			l = 2
 			r = 1
-                CurrentValue = false
+              
 			repeat
 				wait(0.0001)
 				local player = game.Players.LocalPlayer
