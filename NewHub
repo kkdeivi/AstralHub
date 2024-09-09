@@ -8,21 +8,6 @@ local Window = Rayfield:CreateWindow({
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "AstralMain2v233"
-            
-            Rayfield:Notify({
-   Title = "Astral Hub Notification",
-   Content = "Thx For using AstralHub >3",
-   Duration = 5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay!",
-         Callback = function()
-         print("The user tapped Okay!")
-      end
-   },
-},
-})
    },
    Discord = {
       Enabled = false,
