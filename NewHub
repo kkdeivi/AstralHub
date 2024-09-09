@@ -29,16 +29,17 @@ local Window = Rayfield:CreateWindow({
 
 
 
-
 local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
 
 local MainSection = MainTab:CreateSection("Main Scripts")
 
 
-local Button = MainTab:CreateButton({
+local Button = Tab:CreateButton({
    Name = "Players ESP",
    Callback = function()
    
+	
+	script.Parent.MouseButton1Click:Connect(function()
 	
 		local Players = game:GetService("Players")
 		local RunService = game:GetService("RunService")
@@ -66,6 +67,6 @@ local Button = MainTab:CreateButton({
 				if player.Character and player.Character:FindFirstChild("Head") then
 					createNameTag(player)
 				end
-                        end
+			end
    end,
 })
