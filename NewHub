@@ -35,23 +35,6 @@ local Section = MainTab:CreateSection("Main Scripts")
 local SecondTab = Window:CreateTab("🧑 Player Changer Scripts 🧑")
 local SecondSection = SecondTab:CreateSection("Character Scripts")
 
-local ButtonTPTOOL = MainTab:CreateButton({
-   Name = "Give TPTool",
-   Callback = function()
-local tool = Instance.new("Tool")
-            tool.RequiresHandle = false
-            tool.Name = "TPTool"
-            tool.Parent = game.Players.LocalPlayer.Backpack
-            repeat wait() until game.Players.LocalPlayer.Character
-	local plr = game.Players.LocalPlayer
-		local MyBody = plr.Character
-		local mouse = plr:GetMouse()
-	tool.Activated:connect(function()
-		local hit = mouse.Hit
-		MyBody:MoveTo(hit.p)
-	end)
-   end,
-})
 
 local ButtonTPOverTheServer = SecondTab:CreateButton({
    Name = "Tp Over The Server",
