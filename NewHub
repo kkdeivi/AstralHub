@@ -64,31 +64,7 @@ local ButtonTPOverTheServer = SecondTab:CreateButton({
 })
 
 
-local InputTPPlayer = SecondTab:CreateInput({
-   Name = "TP To Target,
-   PlaceholderText = "Insert Target",
-   RemoveTextAfterFocusLost = false,
-   Callback = function(Text)
-   	local currentPlayer = game.Players.LocalPlayer.Character
-		local targetPlayerName = Text
-	
-		-- Verifica se o modelo com o nome do "targetplayer" existe no Workspace
-		local targetPlayerModel = workspace:FindFirstChild(targetPlayerName)
-	
-		if targetPlayerModel and targetPlayerModel:FindFirstChild("HumanoidRootPart") then
-			-- Teleporta o HumanoidRootPart do jogador atual para o HumanoidRootPart do targetPlayer
-			local targetHRP = targetPlayerModel.HumanoidRootPart
-			local currentHRP = currentPlayer:FindFirstChild("HumanoidRootPart")
-	
-			if currentHRP then
-				currentHRP.CFrame = targetHRP.CFrame
-			end
-		else
-			print("Jogador alvo não encontrado no Workspace ou não possui HumanoidRootPart.")
-		end
-	end)
-   end,
-})
+
 
 
 local ButtonFly = MainTab:CreateButton({
