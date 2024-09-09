@@ -39,7 +39,7 @@ local Button = Tab:CreateButton({
    Callback = function()
    
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	
 	
 		local Players = game:GetService("Players")
 		local RunService = game:GetService("RunService")
