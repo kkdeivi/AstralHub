@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
---- LOL
+
 
 local Window = Rayfield:CreateWindow({
    Name = "Astral Hub",
