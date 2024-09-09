@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "Loading Assets...",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      FolderName = AstralHubExample, -- Create a custom folder for your hub/game
       FileName = "AstralMain2v233"
    },
    Discord = {
