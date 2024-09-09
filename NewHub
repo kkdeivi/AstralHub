@@ -50,8 +50,8 @@ local Toggle = MainTab:CreateToggle({
    CurrentValue = false,
    Flag = "ToggleNoclipAstralHub1.0", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-            CurrentValue = true
-  if CurrentValue == true then
+           
+  if Value == true then
 			l = 2
 			r = 1
                 CurrentValue = false
@@ -94,7 +94,7 @@ local Toggle = MainTab:CreateToggle({
 				player.Character.RightUpperArm.CanQuery = false
 				player.Character.RightUpperLeg.CanQuery = false
 			until l == 1
-		elseif CurrentValue == false then
+		elseif Value == false then
 			l = 1
 			r = 0 
 			repeat
