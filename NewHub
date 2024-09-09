@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
--- what are you doing dawg? want to steal scripts?
+
 
 local Window = Rayfield:CreateWindow({
    Name = "Astral Hub",
