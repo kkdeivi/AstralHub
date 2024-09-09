@@ -35,7 +35,7 @@ local Section = MainTab:CreateSection("Main Scripts")
 local SecondTab = Window:CreateTab("🧑 Player Changer Scripts 🧑")
 local SecondSection = SecondTab:CreateSection("Character Scripts")
 
-local ButtonFly = MainTab:CreateButton({
+local ButtonTPTOOL = MainTab:CreateButton({
    Name = "Give TPTool",
    Callback = function()
 local tool = Instance.new("Tool")
