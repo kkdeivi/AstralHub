@@ -29,7 +29,7 @@ Rayfield:Notify({
    Title = "Thx For Using Astral Hub!",
    Content = "Enjoy And Dont Forget The Key in youtube channel :D!",
    Duration = 6.5,
-   Image = 4483362458,
+   Image = nil,
    Actions = { -- Notification Buttons
       Ignore = {
          Name = "No Problem!",
