@@ -29,3 +29,57 @@ local Window = Rayfield:CreateWindow({
 
 
 local MainTab = Window:CreateTab("🏠 Home 🏠", nil) -- Title, Image
+local Section = MainTab:CreateSection("Main Scripts")
+
+local Button = Tab:CreateButton({
+   Name = "Players Esp",
+   Callback = function()
+   -- Obtenha os serviços necessários
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+	
+		-- Função para criar um nome acima da cabeça de um jogador
+		local function createNameTag(player)
+			local nameTag = Instance.new("BillboardGui")
+			nameTag.Parent = player.Character.Head
+			nameTag.Size = UDim2.new(0, 100, 0, 20) -- Tamanho menor
+			nameTag.StudsOffset = Vector3.new(0, 3, 0) -- Posicionar acima da cabeça
+			nameTag.Adornee = player.Character.Head
+			nameTag.AlwaysOnTop = true -- Permitir que o texto atravesse objetos
+	
+			local nameLabel = Instance.new("TextLabel")
+			nameLabel.Parent = nameTag
+			nameLabel.Size = UDim2.new(1, 0, 1, 0)
+			nameLabel.Text = player.Name
+			nameLabel.TextSize = 14 -- Tamanho menor
+			nameLabel.BackgroundTransparency = 1
+			nameLabel.TextColor3 = Color3.new(1, 1, 1) -- Cor do texto (branco)
+		end
+	
+		-- Função para criar nomes para todos os jogadores
+		local function createNameTagsForAllPlayers()
+			for _, player in pairs(Players:GetPlayers()) do
+				if player.Character and player.Character:FindFirstChild("Head") then
+					createNameTag(player)
+				end
+			end
+		end
+	
+		-- Conectar a função para criar nomes quando um novo jogador entrar no jogo
+		Players.PlayerAdded:Connect(createNameTag)
+	
+		-- Criar nomes para todos os jogadores que já estão no jogo
+		createNameTagsForAllPlayers()
+	
+		-- Atualizar a posição dos nomes
+		RunService.RenderStepped:Connect(function()
+			for _, player in pairs(Players:GetPlayers()) do
+				local nameTag = player.Character:FindFirstChild("Head"):FindFirstChild("BillboardGui")
+				if nameTag then
+					nameTag.Adornee = player.Character.Head
+				end
+			end
+   end,
+})
+
+
