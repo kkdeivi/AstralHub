@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
---- LOLa
+
 
 local Window = Rayfield:CreateWindow({
    Name = "Astral Hub",
@@ -27,3 +27,5 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+
+local MainTab = Window:CreateTab("🏠 Home 🏠", nil) -- Title, Image
