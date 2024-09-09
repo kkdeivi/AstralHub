@@ -49,38 +49,3 @@ local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main Scripts")
 
 
-local Button = MainTab:CreateButton({
-   Name = "Players ESP",
-   Callback = function()
-   
-	
-		local Players = game:GetService("Players")
-		local RunService = game:GetService("RunService")
-	
-	
-		local function createNameTag(player)
-			local nameTag = Instance.new("BillboardGui")
-			nameTag.Parent = player.Character.Head
-			nameTag.Size = UDim2.new(0, 100, 0, 20) 
-			nameTag.StudsOffset = Vector3.new(0, 3, 0) 
-			nameTag.Adornee = player.Character.Head
-			nameTag.AlwaysOnTop = true 
-	
-			local nameLabel = Instance.new("TextLabel")
-			nameLabel.Parent = nameTag
-			nameLabel.Size = UDim2.new(1, 0, 1, 0)
-			nameLabel.Text = player.Name
-			nameLabel.TextSize = 14 
-			nameLabel.BackgroundTransparency = 1
-			nameLabel.TextColor3 = Color3.new(1, 1, 1) -- Cor do texto (branco)
-		end
-	
-	local function createNameTagsForAllPlayers()
-			for _, player in pairs(Players:GetPlayers()) do
-				if player.Character and player.Character:FindFirstChild("Head") then
-					createNameTag(player)
-				end
-                        end
-   end,
-})
-
