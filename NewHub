@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-
+-- dont steal BAKA
 local Window = Rayfield:CreateWindow({
    Name = "Astral Hub",
    LoadingTitle = "Welcome To Astral Hub!",
