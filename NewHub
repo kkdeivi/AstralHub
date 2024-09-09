@@ -49,7 +49,7 @@ local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main Scripts")
 
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Players ESP",
    Callback = function()
    
