@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "Loading Assets...",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = AstralHubExample, -- Create a custom folder for your hub/game
+      FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "AstralMain2v233"
    },
    Discord = {
@@ -54,8 +54,6 @@ local Button = MainTab:CreateButton({
    Callback = function()
    
 	
-	script.Parent.MouseButton1Click:Connect(function()
-	
 		local Players = game:GetService("Players")
 		local RunService = game:GetService("RunService")
 	
@@ -82,7 +80,7 @@ local Button = MainTab:CreateButton({
 				if player.Character and player.Character:FindFirstChild("Head") then
 					createNameTag(player)
 				end
-			end
+                        end
    end,
 })
 
