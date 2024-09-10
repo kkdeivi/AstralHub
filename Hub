@@ -4,322 +4,290 @@
 -- Instances:
 
 local AstralHub = Instance.new("ScreenGui")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
 local Frame_2 = Instance.new("Frame")
+local Settings = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Home = Instance.new("TextButton")
+local Frame_4 = Instance.new("Frame")
 local TextButton_3 = Instance.new("TextButton")
 local TextButton_4 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_7 = Instance.new("TextButton")
-local Frame_3 = Instance.new("Frame")
-local TextButton_8 = Instance.new("TextButton")
-local TextButton_9 = Instance.new("TextButton")
-local Frame_4 = Instance.new("Frame")
-local TextButton_10 = Instance.new("TextButton")
-local TextButton_11 = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
-local remote = Instance.new("RemoteEvent")
-remote.Name = "BackdoorAstral"
-local tool = Instance.new("Tool")
-tool.Name = "TPTool"
+local TextButton_8 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_9 = Instance.new("TextButton")
+TextLabel.FontFace = Font.fromName("Oswald")
+TextLabel_2.FontFace = Font.fromName("Oswald")
+TextLabel_3.FontFace = Font.fromName("Oswald")
+
 --Properties:
-AstralHub.Parent = game.Players.LocalPlayer.PlayerGui
 
 AstralHub.Name = "AstralHub"
 AstralHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 AstralHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-TextLabel.Parent = AstralHub
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.229961827, 0, 0.243027896, 0)
-TextLabel.Size = UDim2.new(0, 566, 0, 103)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Welcome To Astral Hub!"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-remote.Parent = TextLabel
-TextLabel_2.Parent = TextLabel
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0730383769, 0, 0.734479606, 0)
-TextLabel_2.Size = UDim2.new(0, 504, 0, 35)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Loading Assets..."
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
 Frame.Parent = AstralHub
-Frame.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
+Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.057768926, 0)
-Frame.Size = UDim2.new(0, 100, 0, 455)
-Frame.Visible = false
+Frame.Position = UDim2.new(0.180343509, 0, 0.163346618, 0)
+Frame.Size = UDim2.new(0, 608, 0, 25)
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.00040174785, 0, 0.998884261, 0)
+Frame_2.Size = UDim2.new(0, 608, 0, 337)
+
+Settings.Name = "Settings"
+Settings.Parent = Frame_2
+Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.202302635, 0, 0.0514951088, 0)
+Settings.Size = UDim2.new(0, 100, 0, 25)
+Settings.Font = Enum.Font.Oswald
+Settings.Text = "Hub Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+Frame_3.Parent = Settings
+Frame_3.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-1.23944461, 0, 1, 0)
+Frame_3.Size = UDim2.new(0, 669, 0, 362)
+Frame_3.Visible = false
+
+TextButton.Parent = Frame_3
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0, 0, 0.160439566, 0)
-TextButton.Size = UDim2.new(0, 100, 0, 50)
-TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "Scripts"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.0209267568, 0, 0.0996660665, 0)
+TextButton.Size = UDim2.new(0, 114, 0, 30)
+TextButton.Font = Enum.Font.Oswald
+TextButton.Text = "Delete Hub"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-Frame_2.Parent = TextButton
-Frame_2.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(1.83000004, 0, -1.13999999, 0)
-Frame_2.Size = UDim2.new(0, 670, 0, 391)
-Frame_2.Visible = false
-
-TextButton_2.Parent = Frame_2
-TextButton_2.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextButton_2.Parent = Frame_3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0152131496, 0, 0.0498434007, 0)
-TextButton_2.Size = UDim2.new(0, 230, 0, 41)
-TextButton_2.Font = Enum.Font.Unknown
-TextButton_2.Text = "Fly Hub"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.0194319878, 0, 0.306848437, 0)
+TextButton_2.Size = UDim2.new(0, 114, 0, 30)
+TextButton_2.Font = Enum.Font.Oswald
+TextButton_2.Text = "Show Less"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
-TextButton_3.Parent = Frame_2
-TextButton_3.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextLabel.Parent = Frame_3
+TextLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.00141174591, 0, 0.0213259701, 0)
+TextLabel.Size = UDim2.new(0, 608, 0, 21)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Settings"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+
+Home.Name = "Home"
+Home.Parent = Frame_2
+Home.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.0131578948, 0, 0.0514951088, 0)
+Home.Size = UDim2.new(0, 100, 0, 25)
+Home.Font = Enum.Font.Oswald
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+Frame_4.Parent = Home
+Frame_4.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(-0.189444587, 0, 1.27999997, 0)
+Frame_4.Size = UDim2.new(0, 669, 0, 362)
+
+TextButton_3.Parent = Frame_4
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.615213156, 0, 0.0447283126, 0)
-TextButton_3.Size = UDim2.new(0, 230, 0, 41)
-TextButton_3.Font = Enum.Font.Unknown
-TextButton_3.Text = "ESP"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.0433482826, 0, 0.0969036371, 0)
+TextButton_3.Size = UDim2.new(0, 114, 0, 30)
+TextButton_3.Font = Enum.Font.Oswald
+TextButton_3.Text = "Players ESP"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
 TextButton_3.TextWrapped = true
 
-TextButton_4.Parent = Frame_2
-TextButton_4.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextButton_4.Parent = Frame_4
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.0152131496, 0, 0.267234713, 0)
-TextButton_4.Size = UDim2.new(0, 230, 0, 41)
-TextButton_4.Font = Enum.Font.Unknown
-TextButton_4.Text = "Noclip (Click Again to Disable)"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.Position = UDim2.new(0.370702535, 0, 0.0969036818, 0)
+TextButton_4.Size = UDim2.new(0, 114, 0, 30)
+TextButton_4.Font = Enum.Font.Oswald
+TextButton_4.Text = "Noclip OFF"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextScaled = true
 TextButton_4.TextSize = 14.000
 TextButton_4.TextWrapped = true
 
-TextButton_5.Parent = Frame_2
-TextButton_5.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextLabel_2.Parent = Frame_4
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0163594298, 0, 0.00751381554, 0)
+TextLabel_2.Size = UDim2.new(0, 608, 0, 21)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "Scripts"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 25.000
+
+TextButton_5.Parent = Frame_4
+TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0, 412, 0, 104)
-TextButton_5.Size = UDim2.new(0, 230, 0, 41)
-TextButton_5.Font = Enum.Font.Unknown
-TextButton_5.Text = "Aimbot"
-TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.Position = UDim2.new(0.702541113, 0, 0.0969036818, 0)
+TextButton_5.Size = UDim2.new(0, 114, 0, 30)
+TextButton_5.Font = Enum.Font.Oswald
+TextButton_5.Text = "TPTool"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextScaled = true
 TextButton_5.TextSize = 14.000
 TextButton_5.TextWrapped = true
 
-TextButton_6.Parent = Frame_2
-TextButton_6.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextButton_6.Parent = Frame_4
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0, 10, 0, 174)
-TextButton_6.Size = UDim2.new(0, 230, 0, 41)
-TextButton_6.Font = Enum.Font.Unknown
-TextButton_6.Text = "Tptool"
-TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.Position = UDim2.new(0.0433482826, 0, 0.251599818, 0)
+TextButton_6.Size = UDim2.new(0, 114, 0, 30)
+TextButton_6.Font = Enum.Font.Oswald
+TextButton_6.Text = "(Op) Tp Over The Server"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextScaled = true
-TextButton_6.TextSize = 14.000
+TextButton_6.TextSize = 30.000
 TextButton_6.TextWrapped = true
-tool.RequiresHandle = false
-tool.Parent = TextButton_6
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.189999998, 0, 0, 0)
-ImageLabel.Size = UDim2.new(0, 50, 0, 45)
-ImageLabel.Image = "rbxassetid://18524288382"
 
-TextLabel_3.Parent = ImageLabel
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(-1.10000002, 0, 0.933333337, 0)
-TextLabel_3.Size = UDim2.new(0, 160, 0, 24)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "User"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-TextButton_7.Parent = Frame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
+TextButton_7.Parent = Frame_4
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0, 0, 0.446153849, 0)
-TextButton_7.Size = UDim2.new(0, 100, 0, 50)
-TextButton_7.Font = Enum.Font.Unknown
-TextButton_7.Text = "Other"
-TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.Position = UDim2.new(0.370702535, 0, 0.251599818, 0)
+TextButton_7.Size = UDim2.new(0, 114, 0, 30)
+TextButton_7.Font = Enum.Font.Oswald
+TextButton_7.Text = "Tp to Target"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextScaled = true
-TextButton_7.TextSize = 14.000
+TextButton_7.TextSize = 30.000
 TextButton_7.TextWrapped = true
 
-Frame_3.Parent = TextButton_7
-Frame_3.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
-Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(2.53055549, 0, -2.35999966, 0)
-Frame_3.Size = UDim2.new(0, 669, 0, 362)
-Frame_3.Visible = false
-
-TextButton_8.Parent = Frame_3
-TextButton_8.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
-TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.BorderSizePixel = 0
-TextButton_8.Position = UDim2.new(0.192825109, 0, 0.0830914825, 0)
-TextButton_8.Size = UDim2.new(0, 344, 0, 50)
-TextButton_8.Font = Enum.Font.Unknown
-TextButton_8.Text = "Delete Hub"
-TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.TextScaled = true
-TextButton_8.TextSize = 14.000
-TextButton_8.TextWrapped = true
-
-TextButton_9.Parent = Frame
-TextButton_9.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
-TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.BorderSizePixel = 0
-TextButton_9.Position = UDim2.new(0, 0, 0.307692319, 0)
-TextButton_9.Size = UDim2.new(0, 100, 0, 50)
-TextButton_9.Font = Enum.Font.Unknown
-TextButton_9.Text = "ServerSide Test"
-TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.TextScaled = true
-TextButton_9.TextSize = 50.000
-TextButton_9.TextWrapped = true
-
-Frame_4.Parent = TextButton_9
-Frame_4.BackgroundColor3 = Color3.fromRGB(10, 7, 88)
-Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(1.82000005, 0, -2.70000005, 0)
-Frame_4.Size = UDim2.new(0, 671, 0, 402)
-Frame_4.Visible = false
-
-TextButton_10.Parent = Frame_4
-TextButton_10.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
-TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.BorderSizePixel = 0
-TextButton_10.Position = UDim2.new(0.328178853, 0, 0.0905414447, 0)
-TextButton_10.Size = UDim2.new(0, 230, 0, 41)
-TextButton_10.Font = Enum.Font.Unknown
-TextButton_10.Text = "Tp Everyone"
-TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.TextScaled = true
-TextButton_10.TextSize = 14.000
-TextButton_10.TextWrapped = true
-
-TextButton_11.Parent = Frame_4
-TextButton_11.BackgroundColor3 = Color3.fromRGB(52, 15, 106)
-TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_11.BorderSizePixel = 0
-TextButton_11.Position = UDim2.new(0.328178853, 0, 0.682581186, 0)
-TextButton_11.Size = UDim2.new(0, 230, 0, 41)
-TextButton_11.Font = Enum.Font.Unknown
-TextButton_11.Text = "Confirm"
-TextButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_11.TextScaled = true
-TextButton_11.TextSize = 14.000
-TextButton_11.TextWrapped = true
-
-TextBox.Parent = Frame_4
-TextBox.BackgroundColor3 = Color3.fromRGB(49, 104, 255)
+TextBox.Parent = TextButton_7
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0.350223541, 0, 0.477611929, 0)
-TextBox.Size = UDim2.new(0, 200, 0, 56)
+TextBox.Position = UDim2.new(-0.114035085, 0, 1.79999995, 0)
+TextBox.Size = UDim2.new(0, 140, 0, 30)
 TextBox.Font = Enum.Font.SourceSansBold
-TextBox.Text = "Insert User to TP."
+TextBox.Text = "Insert Target Here."
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
+TextButton_8.Parent = Frame_4
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.0433482826, 0, 0.400771081, 0)
+TextButton_8.Size = UDim2.new(0, 114, 0, 30)
+TextButton_8.Font = Enum.Font.Oswald
+TextButton_8.Text = "Fly Hub"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 30.000
+TextButton_8.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.157894731, 0, -0.439999998, 0)
+TextLabel_3.Size = UDim2.new(0, 332, 0, 46)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Astral Hub Beta"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+
+TextButton_9.Parent = Frame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.823707998, 0, -0.0131524662, 0)
+TextButton_9.Size = UDim2.new(0, 107, 0, 25)
+TextButton_9.Visible = false
+TextButton_9.Font = Enum.Font.Oswald
+TextButton_9.Text = "Show More"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
 -- Scripts:
 
-local function UCJU_fake_script() -- TextLabel.Script 
-	local script = Instance.new('Script', TextLabel).RunContext == "Server"
-
-	wait(3)
-   AstralHub.Frame.Visible = true
-	remote.Parent = game:GetService("ReplicatedStorage")
-	wait(0.1)
-	 TextLabel:Destroy()	
-	
-end
-coroutine.wrap(UCJU_fake_script)()
-local function OSGZD_fake_script() -- TextButton.LocalScript 
+local function PJBAFD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
-	local lasttimeclicked = 0
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		if lasttimeclicked == 0 then
-			lasttimeclicked = 1
-			script.Parent.Frame.Visible = true
-		else
-			lasttimeclicked = 0
-			script.Parent.Frame.Visible = false
-			
-	
-		end
-	
+		script.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
-	
 end
-coroutine.wrap(OSGZD_fake_script)()
-local function SHNME_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(PJBAFD_fake_script)()
+local function MEYIQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+		script.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(SHNME_fake_script)()
-local function VFHYVQP_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(MEYIQ_fake_script)()
+local function YNJTJ_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Parent.Home.Frame.Visible = false
+	end)
+end
+coroutine.wrap(YNJTJ_fake_script)()
+local function ZCJYXK_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Obtenha os serviços necessários
 		local Players = game:GetService("Players")
@@ -369,14 +337,16 @@ local function VFHYVQP_fake_script() -- TextButton_3.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(VFHYVQP_fake_script)()
-local function FAUEG_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZCJYXK_fake_script)()
+local function WVYFHA_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
+	
 	l = 3
 	r = 0
 	script.Parent.MouseButton1Click:Connect(function()
 		if r == 0 then
+			script.Parent.Text = "Noclip ON"
 			l = 2
 			r = 1
 			repeat
@@ -419,6 +389,7 @@ local function FAUEG_fake_script() -- TextButton_4.LocalScript
 				player.Character.RightUpperLeg.CanQuery = false
 			until l == 1
 		elseif r == 1 then
+			script.Parent.Text = "Noclip OFF"
 			l = 1
 			r = 0 
 			repeat
@@ -440,205 +411,36 @@ local function FAUEG_fake_script() -- TextButton_4.LocalScript
 	
 	end)
 end
-coroutine.wrap(FAUEG_fake_script)()
-local function LXXWQF_fake_script() -- TextButton_5.Op 
+coroutine.wrap(WVYFHA_fake_script)()
+local function IDSXAV_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
-
-	local player = game.Players.LocalPlayer
-	local runService = game:GetService("RunService")
-	local closestModel = nil
-	local locking = false -- Indica se a câmera deve seguir a cabeça mais próxima ou não
-	local userinputservice = game:GetService("UserInputService")
-	
-	-- Referência ao TextButton
-	local button = script.Parent
-		-- Função para criar ImageLabels nas cabeças de todos os personagens (exceto o jogador atual)
-	local function createHeadLabels()
-		for _, model in pairs(workspace:GetDescendants()) do
-			if model:IsA("Model") and model:FindFirstChild("Head") and model:FindFirstChild("Humanoid") and model ~= player.Character then
-				local head = model:FindFirstChild("Head")
-				local screenGui = Instance.new("ScreenGui", player.PlayerGui)
-				local headLabel = Instance.new("ImageLabel", screenGui)
-				headLabel.Size = UDim2.new(0, 30, 0, 30) -- Tamanho do indicador
-				headLabel.BackgroundTransparency = 1 -- Transparente
-				headLabel.Image = "rbxassetid://1234567890" -- Substitua por um ID de imagem válido
-				headLabel.Visible = true
-	
-				-- Atualiza a posição da ImageLabel para a cabeça em tempo real
-				runService.RenderStepped:Connect(function()
-					if head and head:IsA("BasePart") then
-						local screenPosition = workspace.CurrentCamera:WorldToScreenPoint(head.Position)
-						headLabel.Position = UDim2.new(0, screenPosition.X - headLabel.Size.X.Offset / 2, 0, screenPosition.Y - headLabel.Size.Y.Offset / 2)
-					end
-				end)
-			end
-		end
-	end
-	
-	-- Função para encontrar o modelo mais próximo com uma parte chamada 'Head'
-	local function findClosestModelWithHead()
-		local character = player.Character
-		if not character or not character:FindFirstChild("HumanoidRootPart") then return end
-	
-		local rootPart = character.HumanoidRootPart
-		local closestDistance = math.huge
-		closestModel = nil
-	
-		for _, model in pairs(workspace:GetDescendants()) do
-			if model:IsA("Model") and model:FindFirstChild("Head") and model:FindFirstChild("Humanoid") and model ~= character then
-				local head = model:FindFirstChild("Head")
-				if head and head:IsA("BasePart") then
-					local distance = (rootPart.Position - head.Position).Magnitude
-					if distance < closestDistance then
-						closestDistance = distance
-						closestModel = model
-					end
-				end
-			end
-		end
-	end
-	
-	-- Função para atualizar continuamente a posição e a orientação da câmera
-	local function followClosestHead()
-	 
-			if closestModel then
-				local head = closestModel:FindFirstChild("Head")
-				if head and head:IsA("BasePart") then
-					local camera = workspace.CurrentCamera
-					camera.CameraType = Enum.CameraType.Scriptable -- Definimos a câmera como Scriptable
-	
-					-- Atualiza a posição e orientação da câmera para seguir a cabeça mais próxima
-					local headPosition = head.Position
-					camera.CFrame = CFrame.new(camera.CFrame.Position, headPosition)
-				end
-			end
-			
-		end
-	
-	
-	-- Função que desbloqueia a câmera
-	local function unlockCamera()
-		locking = false
-		local camera = workspace.CurrentCamera
-		camera.CameraType = Enum.CameraType.Custom -- Volta para o controle normal da câmera
-	end
-	
-	-- Conecta o clique do TextButton para ativar e desativar o processo
-	button.MouseButton1Click:Connect(function()
-		local inf = 1
-		repeat
-			wait(0.1)
-		if not locking then
-			
-	
-		
-			createHeadLabels() -- Cria os rótulos nas cabeças
-			findClosestModelWithHead() -- Encontra o modelo mais próximo com cabeça
-			locking = true
-			coroutine.wrap(followClosestHead)() -- Inicia o acompanhamento da cabeça mais próxima
-			else
-				
-				unlockCamera()
-				script:Destroy()
-			
-		
-				end
-				
-		until
-			inf == 2
-			
-	end)
-	
-end
-coroutine.wrap(LXXWQF_fake_script)()
-local function ZDGVRAO_fake_script() -- TextButton_6.Op 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	
-	end)
-end
-coroutine.wrap(ZDGVRAO_fake_script)()
-local function DOTV_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
 
 	repeat wait() until game.Players.LocalPlayer.Character
 	
 	-- // Scripted by Seth // --
 	script.Parent.MouseButton1Click:Connect(function()
-	local plr = game.Players.LocalPlayer
+		local plr = game.Players.LocalPlayer
 		local MyBody = plr.Character
-		script.Parent.TPTool:Clone().Parent = game.Players.LocalPlayer.Backpack
 		local mouse = plr:GetMouse()
-	local tool = plr.Backpack.TPTool
-	tool.Activated:connect(function()
-		local hit = mouse.Hit
-		MyBody:MoveTo(hit.p)
-	end)
+		local tool = Instance.new("Tool")
+		tool.Name = "TPTool"
+		tool.Parent = plr.Backpack
+		tool.RequiresHandle = false
+		tool.Activated:connect(function()
+			local hit = mouse.Hit
+			MyBody:MoveTo(hit.p)
+		end)
 	end)
 end
-coroutine.wrap(DOTV_fake_script)()
-local function LFGPGIB_fake_script() -- TextLabel_3.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_3)
+coroutine.wrap(IDSXAV_fake_script)()
+local function XLRUBG_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
 
-	script.Parent.Text = game.Players.LocalPlayer.Name
-end
-coroutine.wrap(LFGPGIB_fake_script)()
-local function MGUKL_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	local lasttimeclicked = 0
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if lasttimeclicked == 0 then
-			lasttimeclicked = 1
-			script.Parent.Frame.Visible = true
-		else
-			lasttimeclicked = 0
-			script.Parent.Frame.Visible = false
-			
-		end
-		
-	end)
-	
-end
-coroutine.wrap(MGUKL_fake_script)()
-local function DFGNGE_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.Parent:Destroy()
-	end)
-end
-coroutine.wrap(DFGNGE_fake_script)()
-local function SDQS_fake_script() -- TextButton_9.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_9)
-
-	local lasttimeclicked = 0
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if lasttimeclicked == 0 then
-			lasttimeclicked = 1
-			script.Parent.Frame.Visible = true
-		else
-			lasttimeclicked = 0
-			script.Parent.Frame.Visible = false
-			
-		end
-		
-	end)
-	
-end
-coroutine.wrap(SDQS_fake_script)()
-local function BOOBGRG_fake_script() -- TextButton_10.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_10)
-	-- LocalScript
-	-- LocalScript
 	local player = game.Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
 	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 	local button = script.Parent -- Referência ao botão (TextButton) que será pressionado
-
+	
 	-- Função que teleporta o jogador local para o HumanoidRootPart de outros jogadores
 	local function teleportToAllPlayers()
 		for _, obj in pairs(game.Players:GetPlayers()) do
@@ -647,7 +449,7 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 				local targetCharacter = obj.Character
 				if targetCharacter and targetCharacter:FindFirstChild("HumanoidRootPart") then
 					local targetHumanoidRootPart = targetCharacter.HumanoidRootPart
-
+	
 					-- Teleporta o jogador local para o HumanoidRootPart do outro jogador
 					humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame
 					wait(0.6) -- Espera 1 segundo antes de teleportar para o próximo jogador
@@ -655,20 +457,19 @@ local function BOOBGRG_fake_script() -- TextButton_10.LocalScript
 			end
 		end
 	end
-
+	
 	-- Conectar o evento do botão para ativar o teleporte
 	button.MouseButton1Click:Connect(function()
 		teleportToAllPlayers()
 	end)
-
 end
-coroutine.wrap(BOOBGRG_fake_script)()
-local function ZTARKGD_fake_script() -- TextButton_11.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_11)
+coroutine.wrap(XLRUBG_fake_script)()
+local function YCAWH_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local currentPlayer = game.Players.LocalPlayer.Character
-		local targetPlayerName = script.Parent.Parent.TextBox.Text
+		local targetPlayerName = script.Parent.TextBox
 	
 		-- Verifica se o modelo com o nome do "targetplayer" existe no Workspace
 		local targetPlayerModel = workspace:FindFirstChild(targetPlayerName)
@@ -687,21 +488,91 @@ local function ZTARKGD_fake_script() -- TextButton_11.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZTARKGD_fake_script)()
-local function ODYI_fake_script() -- Frame.Script 
-	local script = Instance.new('Script', Frame).RunContext == "Server"
+coroutine.wrap(YCAWH_fake_script)()
+local function UPIFHLX_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
 
-	wait(4)
-	game.ReplicatedStorage.BackdoorAstral.OnServerEvent:Connect(function(plr)
-		for i, v in game.Players:GetPlayers() do
-			if not v.Character then continue  end
-			if v == plr then continue end
-			local explosion = Instance.new("Explosion")
-			explosion.Position = v.Character:WaitForChild("HumanoidRootPart")
-			explosion.Parent = workspace
-			
-			
-		end
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+		end)
+end
+coroutine.wrap(UPIFHLX_fake_script)()
+local function PVEG_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Parent.Settings.Frame.Visible = false
 	end)
 end
-coroutine.wrap(ODYI_fake_script)()
+coroutine.wrap(PVEG_fake_script)()
+local function ZVKCVR_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZVKCVR_fake_script)()
+local function ZNUWQVA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local Holding = Instance.new("BoolValue")
+	Holding.Parent = script.Parent
+	local frame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Função para verificar se o mouse ou toque está sobre o frame
+	local function isInputOverFrame(inputPosition)
+		local framePosition = frame.AbsolutePosition
+		local frameSize = frame.AbsoluteSize
+	
+		return inputPosition.X >= framePosition.X and inputPosition.X <= framePosition.X + frameSize.X
+			and inputPosition.Y >= framePosition.Y and inputPosition.Y <= framePosition.Y + frameSize.Y
+	end
+	
+	-- Função para mover o frame de acordo com a posição do input
+	local function moveObject(inputPosition)
+		frame.Position = UDim2.new(0, inputPosition.X - frame.AbsoluteSize.X / 2, 0, inputPosition.Y - frame.AbsoluteSize.Y / 2)
+	end
+	
+	-- Para dispositivos desktop (mouse)
+	mouse.Button1Down:Connect(function()
+		if isInputOverFrame(Vector2.new(mouse.X, mouse.Y)) then
+			Holding.Value = true -- Começa a seguir o mouse
+		end
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		Holding.Value = false -- Para de seguir o mouse
+	end)
+	
+	mouse.Move:Connect(function()
+		if Holding.Value then
+			moveObject(Vector2.new(mouse.X, mouse.Y))
+		end
+	end)
+	
+	-- Para dispositivos móveis (toque)
+	UserInputService.TouchStarted:Connect(function(input, gameProcessedEvent)
+		if not gameProcessedEvent and isInputOverFrame(input.Position) then
+			Holding.Value = true -- Começa a seguir o toque
+			moveObject(input.Position)
+		end
+	end)
+	
+	UserInputService.TouchMoved:Connect(function(input, gameProcessedEvent)
+		if Holding.Value and not gameProcessedEvent then
+			moveObject(input.Position)
+		end
+	end)
+	
+	UserInputService.TouchEnded:Connect(function(input, gameProcessedEvent)
+		Holding.Value = false -- Para de seguir o toque
+	end)
+	
+end
+coroutine.wrap(ZNUWQVA_fake_script)()
