@@ -82,7 +82,7 @@ Visual.Position = UDim2.new(0, 0, 0.977000296, 0)
 Visual.Size = UDim2.new(0, 656, 0, 354)
 Visual.Image = "rbxassetid://2884239155"
 Visual.ImageTransparency = 1.000
-
+Visual.Visible = false
 Home.Name = "Home"
 Home.Parent = Visual
 Home.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
