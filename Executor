@@ -28,13 +28,7 @@ local A = Instance.new("TextLabel")
 local S = Instance.new("TextLabel")
 local Welcome = Instance.new("TextLabel")
 local Templatewindow_3 = Instance.new("ImageLabel")
-KeyText.FontFace = Font.fromName("Oswald")
-LOL1.FontFace = Font.fromName("Oswald")
-LOL2.FontFace = Font.fromName("Oswald")
-LOL3.FontFace = Font.fromName("Oswald")
-A.FontFace = Font.fromName("Oswald")
-S.FontFace = Font.fromName("Oswald")
-Welcome.FontFace = Font.fromName("Oswald")
+AstralInjector.ResetOnSpawn = false
 --Properties:
 
 AstralInjector.Name = "AstralInjector"
@@ -86,7 +80,6 @@ Visual.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Visual.BorderSizePixel = 0
 Visual.Position = UDim2.new(0, 0, 0.977000296, 0)
 Visual.Size = UDim2.new(0, 656, 0, 354)
-Visual.Visible = false
 Visual.Image = "rbxassetid://2884239155"
 Visual.ImageTransparency = 1.000
 
@@ -97,7 +90,7 @@ Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0, 0, -0.00282485876, 0)
 Home.Size = UDim2.new(0, 170, 0, 24)
-Home.Font = Enum.Font.Unknown
+Home.Font = Enum.Font.Oswald
 Home.Text = "Home"
 Home.TextColor3 = Color3.fromRGB(255, 255, 255)
 Home.TextScaled = true
@@ -132,14 +125,14 @@ Script.TextXAlignment = Enum.TextXAlignment.Left
 Script.TextYAlignment = Enum.TextYAlignment.Top
 
 TextButton.Parent = Templatewindow
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.695121944, 0, 0.846672475, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Position = UDim2.new(0.727134168, 0, 0.916158915, 0)
+TextButton.Size = UDim2.new(0, 179, 0, 27)
 TextButton.Font = Enum.Font.SourceSansBold
 TextButton.Text = "Inject"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
@@ -151,7 +144,7 @@ Extra.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Extra.BorderSizePixel = 0
 Extra.Position = UDim2.new(0.259146333, 0, -0.00282485876, 0)
 Extra.Size = UDim2.new(0, 170, 0, 22)
-Extra.Font = Enum.Font.Unknown
+Extra.Font = Enum.Font.Oswald
 Extra.Text = "Cool Things"
 Extra.TextColor3 = Color3.fromRGB(255, 255, 255)
 Extra.TextScaled = true
@@ -175,7 +168,7 @@ Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Button.BorderSizePixel = 0
 Button.Position = UDim2.new(0.0152439028, 0, 0.198131517, 0)
 Button.Size = UDim2.new(0, 133, 0, 24)
-Button.Font = Enum.Font.Unknown
+Button.Font = Enum.Font.Oswald
 Button.Text = "MM2 GHOST HUB"
 Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button.TextScaled = true
@@ -189,7 +182,7 @@ Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Button_2.BorderSizePixel = 0
 Button_2.Position = UDim2.new(0.0152439028, 0, 0.311125875, 0)
 Button_2.Size = UDim2.new(0, 133, 0, 24)
-Button_2.Font = Enum.Font.Unknown
+Button_2.Font = Enum.Font.Oswald
 Button_2.Text = "Blade Ball Auto Parry"
 Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button_2.TextScaled = true
@@ -203,7 +196,7 @@ Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Button_3.BorderSizePixel = 0
 Button_3.Position = UDim2.new(0.0152439028, 0, 0.079487443, 0)
 Button_3.Size = UDim2.new(0, 133, 0, 24)
-Button_3.Font = Enum.Font.Unknown
+Button_3.Font = Enum.Font.Oswald
 Button_3.Text = "Astral Hub (Universal)"
 Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button_3.TextScaled = true
@@ -258,7 +251,7 @@ LOL3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LOL3.BorderSizePixel = 0
 LOL3.Position = UDim2.new(0.0152439028, 0, -0.5, 0)
 LOL3.Size = UDim2.new(0, 123, 0, 50)
-LOL3.Font = Enum.Font.Unknown
+LOL3.Font = Enum.Font.Oswald
 LOL3.Text = "Injector"
 LOL3.TextColor3 = Color3.fromRGB(255, 255, 255)
 LOL3.TextSize = 20.000
@@ -271,7 +264,7 @@ KeyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
 KeyText.BorderSizePixel = 0
 KeyText.Position = UDim2.new(0.224085361, 0, 2.65384626, 0)
 KeyText.Size = UDim2.new(0, 336, 0, 65)
-KeyText.Font = Enum.Font.Unknown
+KeyText.Font = Enum.Font.Oswald
 KeyText.Text = "Key System."
 KeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
 KeyText.TextSize = 25.000
@@ -349,7 +342,7 @@ Welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Welcome.BorderSizePixel = 0
 Welcome.Position = UDim2.new(0.22560975, 0, 1.46153843, 0)
 Welcome.Size = UDim2.new(0, 336, 0, 65)
-Welcome.Font = Enum.Font.Unknown
+Welcome.Font = Enum.Font.Oswald
 Welcome.Text = "Welcome To Astral Injector!"
 Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
 Welcome.TextScaled = true
@@ -366,14 +359,10 @@ Templatewindow_3.Position = UDim2.new(-0.00145177147, 0, 0.927781343, 0)
 Templatewindow_3.Size = UDim2.new(0, 656, 0, 354)
 Templatewindow_3.ZIndex = 0
 Templatewindow_3.Image = "rbxassetid://2884239155"
-Button.FontFace = Font.fromName('Oswald')
-Button_2.FontFace = Font.fromName('Oswald')
-Button_3.FontFace = Font.fromName('Oswald')
-Home.FontFace = Font.fromName("Oswald")
-Extra.FontFace = Font.fromName("Oswald")
+
 -- Scripts:
 
-local function NOHPVB_fake_script() -- Window.LocalScript 
+local function LODC_fake_script() -- Window.LocalScript 
 	local script = Instance.new('LocalScript', Window)
 
 	local player = game.Players.LocalPlayer
@@ -433,8 +422,8 @@ local function NOHPVB_fake_script() -- Window.LocalScript
 	end)
 	
 end
-coroutine.wrap(NOHPVB_fake_script)()
-local function QVELB_fake_script() -- Close.LocalScript 
+coroutine.wrap(LODC_fake_script)()
+local function ZJYC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -442,8 +431,8 @@ local function QVELB_fake_script() -- Close.LocalScript
 	
 	end)
 end
-coroutine.wrap(QVELB_fake_script)()
-local function XHWQ_fake_script() -- HideVisual.LocalScript 
+coroutine.wrap(ZJYC_fake_script)()
+local function BBPE_fake_script() -- HideVisual.LocalScript 
 	local script = Instance.new('LocalScript', HideVisual)
 
 	local lasttimeclick = 0
@@ -457,8 +446,8 @@ local function XHWQ_fake_script() -- HideVisual.LocalScript
 	end
 	end)
 end
-coroutine.wrap(XHWQ_fake_script)()
-local function HDLOXUF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(BBPE_fake_script)()
+local function DZSS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textbox = script.Parent.Parent.Script
@@ -467,8 +456,8 @@ local function HDLOXUF_fake_script() -- TextButton.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(HDLOXUF_fake_script)()
-local function IYASIM_fake_script() -- Home.LocalScript 
+coroutine.wrap(DZSS_fake_script)()
+local function APBJ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -476,16 +465,16 @@ local function IYASIM_fake_script() -- Home.LocalScript
 		script.Parent.Templatewindow.Visible = true
 	end)
 end
-coroutine.wrap(IYASIM_fake_script)()
-local function UJCGOU_fake_script() -- Button.LocalScript 
+coroutine.wrap(APBJ_fake_script)()
+local function AUXMTE_fake_script() -- Button.LocalScript 
 	local script = Instance.new('LocalScript', Button)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://scriptblox.com/raw/Murder-Mystery-2-GhostHub-MM-13413"))()
 	end)
 end
-coroutine.wrap(UJCGOU_fake_script)()
-local function NDLYEZ_fake_script() -- Button_2.LocalScript 
+coroutine.wrap(AUXMTE_fake_script)()
+local function MLINZJA_fake_script() -- Button_2.LocalScript 
 	local script = Instance.new('LocalScript', Button_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -493,16 +482,16 @@ local function NDLYEZ_fake_script() -- Button_2.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
 	end)
 end
-coroutine.wrap(NDLYEZ_fake_script)()
-local function JTTENZV_fake_script() -- Button_3.LocalScript 
+coroutine.wrap(MLINZJA_fake_script)()
+local function FFOKO_fake_script() -- Button_3.LocalScript 
 	local script = Instance.new('LocalScript', Button_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/kkdeivi/AstralHub/main/Hub"))()
 	end)
 end
-coroutine.wrap(JTTENZV_fake_script)()
-local function GBTBX_fake_script() -- Extra.LocalScript 
+coroutine.wrap(FFOKO_fake_script)()
+local function LGHOJ_fake_script() -- Extra.LocalScript 
 	local script = Instance.new('LocalScript', Extra)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -510,14 +499,14 @@ local function GBTBX_fake_script() -- Extra.LocalScript
 		script.Parent.Templatewindow.Visible = true
 	end)
 end
-coroutine.wrap(GBTBX_fake_script)()
-local function JBZFMXH_fake_script() -- KeyInsert.LocalScript 
+coroutine.wrap(LGHOJ_fake_script)()
+local function RNKIMCT_fake_script() -- KeyInsert.LocalScript 
 	local script = Instance.new('LocalScript', KeyInsert)
 
 	
 end
-coroutine.wrap(JBZFMXH_fake_script)()
-local function DTSI_fake_script() -- ConfirmKey.LocalScript 
+coroutine.wrap(RNKIMCT_fake_script)()
+local function LWNIUZC_fake_script() -- ConfirmKey.LocalScript 
 	local script = Instance.new('LocalScript', ConfirmKey)
 
 	local key = 'Release!'
@@ -531,15 +520,14 @@ local function DTSI_fake_script() -- ConfirmKey.LocalScript
 			script.Parent.Parent.A:Destroy()
 			script.Parent.Parent.S:Destroy()
 			script.Parent.Parent.Visual.Visible = true
-			HideVisual.Visible = true
 			script.Parent.Parent.Templatewindow:Destroy()
 			script.Parent.Parent.ConfirmKey:Destroy()
 			
 		end
 	end)
 end
-coroutine.wrap(DTSI_fake_script)()
-local function AAVBZUC_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(LWNIUZC_fake_script)()
+local function BBOCKO_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	-- Espera 5 segundos antes de começar
@@ -618,4 +606,4 @@ local function AAVBZUC_fake_script() -- Welcome.LocalScript
 	-- Loop para aumentar a transparência do TextButton e do KeyText de volta a 1
 	
 end
-coroutine.wrap(AAVBZUC_fake_script)()
+coroutine.wrap(BBOCKO_fake_script)()
