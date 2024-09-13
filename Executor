@@ -1,1 +1,621 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local AstralInjector = Instance.new("ScreenGui")
+local Window = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local HideVisual = Instance.new("TextButton")
+local Visual = Instance.new("ImageLabel")
+local Home = Instance.new("TextButton")
+local Templatewindow = Instance.new("ImageLabel")
+local Script = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local Extra = Instance.new("TextButton")
+local Templatewindow_2 = Instance.new("ImageLabel")
+local Button = Instance.new("TextButton")
+local Button_2 = Instance.new("TextButton")
+local Button_3 = Instance.new("TextButton")
+local Black = Instance.new("TextButton")
+local LOL1 = Instance.new("TextLabel")
+local LOL2 = Instance.new("TextLabel")
+local LOL3 = Instance.new("TextLabel")
+local KeyText = Instance.new("TextLabel")
+local KeyInsert = Instance.new("TextBox")
+local ConfirmKey = Instance.new("TextButton")
+local A = Instance.new("TextLabel")
+local S = Instance.new("TextLabel")
+local Welcome = Instance.new("TextLabel")
+local Templatewindow_3 = Instance.new("ImageLabel")
+KeyText.FontFace = Font.fromName("Oswald")
+LOL1.FontFace = Font.fromName("Oswald")
+LOL2.FontFace = Font.fromName("Oswald")
+LOL3.FontFace = Font.fromName("Oswald")
+A.FontFace = Font.fromName("Oswald")
+S.FontFace = Font.fromName("Oswald")
+Welcome.FontFace = Font.fromName("Oswald")
+--Properties:
+
+AstralInjector.Name = "AstralInjector"
+AstralInjector.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AstralInjector.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Window.Name = "Window"
+Window.Parent = AstralInjector
+Window.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Window.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Window.BorderSizePixel = 0
+Window.Position = UDim2.new(0.155682907, 0, 0.117529884, 0)
+Window.Size = UDim2.new(0, 656, 0, 26)
+
+Close.Name = "Close"
+Close.Parent = Window
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.929878056, 0, 0, 0)
+Close.Size = UDim2.new(0, 46, 0, 25)
+Close.Font = Enum.Font.SourceSansBold
+Close.LineHeight = 0.000
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 20.000
+
+HideVisual.Name = "HideVisual"
+HideVisual.Parent = Window
+HideVisual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideVisual.BackgroundTransparency = 1.000
+HideVisual.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideVisual.BorderSizePixel = 0
+HideVisual.Position = UDim2.new(0.849085391, 0, 0, 0)
+HideVisual.Size = UDim2.new(0, 46, 0, 25)
+HideVisual.Visible = false
+HideVisual.Font = Enum.Font.SourceSansBold
+HideVisual.LineHeight = 0.000
+HideVisual.Text = "_"
+HideVisual.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideVisual.TextSize = 20.000
+
+Visual.Name = "Visual"
+Visual.Parent = Window
+Visual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visual.BackgroundTransparency = 1.000
+Visual.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Visual.BorderSizePixel = 0
+Visual.Position = UDim2.new(0, 0, 0.977000296, 0)
+Visual.Size = UDim2.new(0, 656, 0, 354)
+Visual.Visible = false
+Visual.Image = "rbxassetid://2884239155"
+Visual.ImageTransparency = 1.000
+
+Home.Name = "Home"
+Home.Parent = Visual
+Home.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0, 0, -0.00282485876, 0)
+Home.Size = UDim2.new(0, 170, 0, 24)
+Home.Font = Enum.Font.Unknown
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+Templatewindow.Name = "Templatewindow"
+Templatewindow.Parent = Home
+Templatewindow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Templatewindow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Templatewindow.BorderSizePixel = 0
+Templatewindow.Position = UDim2.new(0, 0, 0.916667938, 0)
+Templatewindow.Size = UDim2.new(0, 656, 0, 331)
+Templatewindow.Image = "rbxassetid://2884239155"
+
+Script.Name = "Script"
+Script.Parent = Templatewindow
+Script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Script.BackgroundTransparency = 1.000
+Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Script.BorderSizePixel = 0
+Script.Position = UDim2.new(0.0152439028, 0, 0.180790886, 0)
+Script.Size = UDim2.new(0, 646, 0, 271)
+Script.Font = Enum.Font.SourceSansBold
+Script.MultiLine = true
+Script.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Script.PlaceholderText = "Script Here..."
+Script.Text = ""
+Script.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script.TextSize = 17.000
+Script.TextXAlignment = Enum.TextXAlignment.Left
+Script.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = Templatewindow
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.695121944, 0, 0.846672475, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Inject"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Extra.Name = "Extra"
+Extra.Parent = Visual
+Extra.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Extra.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Extra.BorderSizePixel = 0
+Extra.Position = UDim2.new(0.259146333, 0, -0.00282485876, 0)
+Extra.Size = UDim2.new(0, 170, 0, 22)
+Extra.Font = Enum.Font.Unknown
+Extra.Text = "Cool Things"
+Extra.TextColor3 = Color3.fromRGB(255, 255, 255)
+Extra.TextScaled = true
+Extra.TextSize = 14.000
+Extra.TextWrapped = true
+
+Templatewindow_2.Name = "Templatewindow"
+Templatewindow_2.Parent = Extra
+Templatewindow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Templatewindow_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Templatewindow_2.BorderSizePixel = 0
+Templatewindow_2.Position = UDim2.new(-1, 0, 0.958334208, 0)
+Templatewindow_2.Size = UDim2.new(0, 656, 0, 332)
+Templatewindow_2.Visible = false
+Templatewindow_2.Image = "rbxassetid://2884239155"
+
+Button.Name = "Button"
+Button.Parent = Templatewindow_2
+Button.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.0152439028, 0, 0.198131517, 0)
+Button.Size = UDim2.new(0, 133, 0, 24)
+Button.Font = Enum.Font.Unknown
+Button.Text = "MM2 GHOST HUB"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+Button_2.Name = "Button"
+Button_2.Parent = Templatewindow_2
+Button_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0.0152439028, 0, 0.311125875, 0)
+Button_2.Size = UDim2.new(0, 133, 0, 24)
+Button_2.Font = Enum.Font.Unknown
+Button_2.Text = "Blade Ball Auto Parry"
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextScaled = true
+Button_2.TextSize = 14.000
+Button_2.TextWrapped = true
+
+Button_3.Name = "Button"
+Button_3.Parent = Templatewindow_2
+Button_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.BorderSizePixel = 0
+Button_3.Position = UDim2.new(0.0152439028, 0, 0.079487443, 0)
+Button_3.Size = UDim2.new(0, 133, 0, 24)
+Button_3.Font = Enum.Font.Unknown
+Button_3.Text = "Astral Hub (Universal)"
+Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.TextScaled = true
+Button_3.TextSize = 14.000
+Button_3.TextWrapped = true
+
+Black.Name = "Black"
+Black.Parent = Visual
+Black.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Black.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Black.BorderSizePixel = 0
+Black.Position = UDim2.new(0.518292665, 0, -0.00282485876, 0)
+Black.Size = UDim2.new(0, 316, 0, 24)
+Black.Font = Enum.Font.Unknown
+Black.Text = ""
+Black.TextColor3 = Color3.fromRGB(255, 255, 255)
+Black.TextScaled = true
+Black.TextSize = 14.000
+Black.TextWrapped = true
+
+LOL1.Name = "LOL1"
+LOL1.Parent = Window
+LOL1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LOL1.BackgroundTransparency = 1.000
+LOL1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LOL1.BorderSizePixel = 0
+LOL1.Position = UDim2.new(-0.117378049, 0, -0.461538464, 0)
+LOL1.Size = UDim2.new(0, 200, 0, 50)
+LOL1.Font = Enum.Font.Oswald
+LOL1.Text = "A"
+LOL1.TextColor3 = Color3.fromRGB(255, 255, 255)
+LOL1.TextSize = 20.000
+
+LOL2.Name = "LOL2"
+LOL2.Parent = Window
+LOL2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LOL2.BackgroundTransparency = 1.000
+LOL2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LOL2.BorderSizePixel = 0
+LOL2.Position = UDim2.new(-0.102134146, 0, -0.461538464, 0)
+LOL2.Size = UDim2.new(0, 200, 0, 50)
+LOL2.Font = Enum.Font.Oswald
+LOL2.Text = "S"
+LOL2.TextColor3 = Color3.fromRGB(115, 0, 255)
+LOL2.TextSize = 21.000
+
+LOL3.Name = "LOL3"
+LOL3.Parent = Window
+LOL3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LOL3.BackgroundTransparency = 1.000
+LOL3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LOL3.BorderSizePixel = 0
+LOL3.Position = UDim2.new(0.0152439028, 0, -0.5, 0)
+LOL3.Size = UDim2.new(0, 123, 0, 50)
+LOL3.Font = Enum.Font.Unknown
+LOL3.Text = "Injector"
+LOL3.TextColor3 = Color3.fromRGB(255, 255, 255)
+LOL3.TextSize = 20.000
+
+KeyText.Name = "KeyText"
+KeyText.Parent = Window
+KeyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.BackgroundTransparency = 1.000
+KeyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyText.BorderSizePixel = 0
+KeyText.Position = UDim2.new(0.224085361, 0, 2.65384626, 0)
+KeyText.Size = UDim2.new(0, 336, 0, 65)
+KeyText.Font = Enum.Font.Unknown
+KeyText.Text = "Key System."
+KeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.TextSize = 25.000
+KeyText.TextTransparency = 1.000
+KeyText.TextWrapped = true
+
+KeyInsert.Name = "KeyInsert"
+KeyInsert.Parent = Window
+KeyInsert.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyInsert.BackgroundTransparency = 1.000
+KeyInsert.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyInsert.BorderSizePixel = 0
+KeyInsert.Position = UDim2.new(0.347560972, 0, 6.07692289, 0)
+KeyInsert.Size = UDim2.new(0, 173, 0, 22)
+KeyInsert.Visible = false
+KeyInsert.Font = Enum.Font.SourceSansBold
+KeyInsert.PlaceholderText = "Insert Key."
+KeyInsert.Text = ""
+KeyInsert.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyInsert.TextSize = 17.000
+KeyInsert.TextTransparency = 1.000
+
+ConfirmKey.Name = "ConfirmKey"
+ConfirmKey.Parent = Window
+ConfirmKey.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ConfirmKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ConfirmKey.BorderSizePixel = 0
+ConfirmKey.Position = UDim2.new(0.353658527, 0, 8.42307663, 0)
+ConfirmKey.Size = UDim2.new(0, 166, 0, 25)
+ConfirmKey.Visible = false
+ConfirmKey.Font = Enum.Font.SourceSansBold
+ConfirmKey.Text = "Confirm"
+ConfirmKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+ConfirmKey.TextScaled = true
+ConfirmKey.TextSize = 14.000
+ConfirmKey.TextWrapped = true
+
+A.Name = "A"
+A.Parent = Window
+A.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A.BackgroundTransparency = 1.000
+A.BorderColor3 = Color3.fromRGB(0, 0, 0)
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0.301829278, 0, 3.96153855, 0)
+A.Size = UDim2.new(0, 200, 0, 50)
+A.Font = Enum.Font.Oswald
+A.Text = "A"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextScaled = true
+A.TextSize = 20.000
+A.TextTransparency = 1.000
+A.TextWrapped = true
+
+S.Name = "S"
+S.Parent = Window
+S.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+S.BackgroundTransparency = 1.000
+S.BorderColor3 = Color3.fromRGB(0, 0, 0)
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0.327743888, 0, 3.96153855, 0)
+S.Size = UDim2.new(0, 200, 0, 50)
+S.Font = Enum.Font.Oswald
+S.Text = "S"
+S.TextColor3 = Color3.fromRGB(115, 0, 255)
+S.TextScaled = true
+S.TextSize = 21.000
+S.TextTransparency = 1.000
+S.TextWrapped = true
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Window
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.22560975, 0, 1.46153843, 0)
+Welcome.Size = UDim2.new(0, 336, 0, 65)
+Welcome.Font = Enum.Font.Unknown
+Welcome.Text = "Welcome To Astral Injector!"
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextScaled = true
+Welcome.TextSize = 20.000
+Welcome.TextTransparency = 1.000
+Welcome.TextWrapped = true
+
+Templatewindow_3.Name = "Templatewindow"
+Templatewindow_3.Parent = Window
+Templatewindow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Templatewindow_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Templatewindow_3.BorderSizePixel = 0
+Templatewindow_3.Position = UDim2.new(-0.00145177147, 0, 0.927781343, 0)
+Templatewindow_3.Size = UDim2.new(0, 656, 0, 354)
+Templatewindow_3.ZIndex = 0
+Templatewindow_3.Image = "rbxassetid://2884239155"
+Button.FontFace = Font.fromName('Oswald')
+Button_2.FontFace = Font.fromName('Oswald')
+Button_3.FontFace = Font.fromName('Oswald')
+Home.FontFace = Font.fromName("Oswald")
+Extra.FontFace = Font.fromName("Oswald")
+-- Scripts:
+
+local function NOHPVB_fake_script() -- Window.LocalScript 
+	local script = Instance.new('LocalScript', Window)
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local Holding = Instance.new("BoolValue")
+	Holding.Parent = script.Parent
+	local frame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Função para verificar se o mouse ou toque está sobre o frame
+	local function isInputOverFrame(inputPosition)
+		local framePosition = frame.AbsolutePosition
+		local frameSize = frame.AbsoluteSize
+	
+		return inputPosition.X >= framePosition.X and inputPosition.X <= framePosition.X + frameSize.X
+			and inputPosition.Y >= framePosition.Y and inputPosition.Y <= framePosition.Y + frameSize.Y
+	end
+	
+	-- Função para mover o frame de acordo com a posição do input
+	local function moveObject(inputPosition)
+		frame.Position = UDim2.new(0, inputPosition.X - frame.AbsoluteSize.X / 2, 0, inputPosition.Y - frame.AbsoluteSize.Y / 2)
+	end
+	
+	-- Para dispositivos desktop (mouse)
+	mouse.Button1Down:Connect(function()
+		if isInputOverFrame(Vector2.new(mouse.X, mouse.Y)) then
+			Holding.Value = true -- Começa a seguir o mouse
+		end
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		Holding.Value = false -- Para de seguir o mouse
+	end)
+	
+	mouse.Move:Connect(function()
+		if Holding.Value then
+			moveObject(Vector2.new(mouse.X, mouse.Y))
+		end
+	end)
+	
+	-- Para dispositivos móveis (toque)
+	UserInputService.TouchStarted:Connect(function(input, gameProcessedEvent)
+		if not gameProcessedEvent and isInputOverFrame(input.Position) then
+			Holding.Value = true -- Começa a seguir o toque
+			moveObject(input.Position)
+		end
+	end)
+	
+	UserInputService.TouchMoved:Connect(function(input, gameProcessedEvent)
+		if Holding.Value and not gameProcessedEvent then
+			moveObject(input.Position)
+		end
+	end)
+	
+	UserInputService.TouchEnded:Connect(function(input, gameProcessedEvent)
+		Holding.Value = false -- Para de seguir o toque
+	end)
+	
+end
+coroutine.wrap(NOHPVB_fake_script)()
+local function QVELB_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent:Destroy()
+	
+	end)
+end
+coroutine.wrap(QVELB_fake_script)()
+local function XHWQ_fake_script() -- HideVisual.LocalScript 
+	local script = Instance.new('LocalScript', HideVisual)
+
+	local lasttimeclick = 0
+	script.Parent.MouseButton1Click:Connect(function()
+		if lasttimeclick == 0 then
+			lasttimeclick = 1
+			script.Parent.Parent.Parent.Window.Visual.Visible = false
+		else
+			lasttimeclick = 0
+			script.Parent.Parent.Parent.Window.Visual.Visible = true
+	end
+	end)
+end
+coroutine.wrap(XHWQ_fake_script)()
+local function HDLOXUF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local textbox = script.Parent.Parent.Script
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(HDLOXUF_fake_script)()
+local function IYASIM_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Extra.Templatewindow.Visible = false
+		script.Parent.Templatewindow.Visible = true
+	end)
+end
+coroutine.wrap(IYASIM_fake_script)()
+local function UJCGOU_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Murder-Mystery-2-GhostHub-MM-13413"))()
+	end)
+end
+coroutine.wrap(UJCGOU_fake_script)()
+local function NDLYEZ_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.UI_Size = 200 -- config ui size
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+	end)
+end
+coroutine.wrap(NDLYEZ_fake_script)()
+local function JTTENZV_fake_script() -- Button_3.LocalScript 
+	local script = Instance.new('LocalScript', Button_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kkdeivi/AstralHub/main/Hub"))()
+	end)
+end
+coroutine.wrap(JTTENZV_fake_script)()
+local function GBTBX_fake_script() -- Extra.LocalScript 
+	local script = Instance.new('LocalScript', Extra)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Home.Templatewindow.Visible = false
+		script.Parent.Templatewindow.Visible = true
+	end)
+end
+coroutine.wrap(GBTBX_fake_script)()
+local function JBZFMXH_fake_script() -- KeyInsert.LocalScript 
+	local script = Instance.new('LocalScript', KeyInsert)
+
+	
+end
+coroutine.wrap(JBZFMXH_fake_script)()
+local function DTSI_fake_script() -- ConfirmKey.LocalScript 
+	local script = Instance.new('LocalScript', ConfirmKey)
+
+	local key = 'Release!'
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.KeyInsert.Text == key then
+			
+			script.Parent.Parent.Welcome:Destroy()
+			script.Parent.Parent.KeyText:Destroy()
+			script.Parent.Parent.KeyInsert:Destroy()
+			script.Parent.Parent.A:Destroy()
+			script.Parent.Parent.S:Destroy()
+			script.Parent.Parent.Visual.Visible = true
+			HideVisual.Visible = true
+			script.Parent.Parent.Templatewindow:Destroy()
+			script.Parent.Parent.ConfirmKey:Destroy()
+			
+		end
+	end)
+end
+coroutine.wrap(DTSI_fake_script)()
+local function AAVBZUC_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	-- Espera 5 segundos antes de começar
+	
+	
+	-- Variáveis para controlar os loops
+	local loop = false
+	local loop2 = false
+	
+	-- Primeiro loop: reduz a transparência de todos os textos até chegar a 0
+	repeat
+		wait(0.2)
+	
+		-- Verifica se a transparência chegou a 0 para interromper o loop
+		if script.Parent.TextTransparency <= 0 then
+			script.Parent.TextTransparency = 0
+			script.Parent.Parent.A.TextTransparency = 0
+			script.Parent.Parent.S.TextTransparency = 0
+			loop = true
+		else
+			-- Reduz a transparência gradualmente
+			script.Parent.TextTransparency -= 0.1
+			script.Parent.Parent.A.TextTransparency -= 0.1
+			script.Parent.Parent.S.TextTransparency -= 0.1
+		end
+	
+	until loop == true
+	
+	-- Segundo loop: aumenta a transparência de todos os textos até chegar a 1
+	repeat
+		wait(0.2)
+	
+		-- Verifica se a transparência chegou a 1 para interromper o loop
+		if script.Parent.TextTransparency >= 1 then
+			script.Parent.TextTransparency = 1
+			script.Parent.Parent.A.TextTransparency = 1
+			script.Parent.Parent.S.TextTransparency = 1
+			loop2 = true
+		else
+			-- Aumenta a transparência gradualmente
+			script.Parent.TextTransparency += 0.1
+			script.Parent.Parent.A.TextTransparency += 0.1
+			script.Parent.Parent.S.TextTransparency += 0.1
+		end
+	
+	until loop2 == true
+	
+	-- Após a animação anterior terminar, iniciar a animação do TextButton e TextLabel
+	local confirmButton = script.Parent.Parent.ConfirmKey
+	local keyText =script.Parent.Parent.KeyText
+	local textbox = script.Parent.Parent.KeyInsert
+	
+	-- Loop para reduzir a transparência do TextButton e do KeyText
+	repeat
+		wait(0.2)
+	
+		if confirmButton.BackgroundTransparency <= 0 and confirmButton.TextTransparency <= 0 and keyText.TextTransparency <= 0 then
+			confirmButton.BackgroundTransparency = 0
+			confirmButton.TextTransparency = 0
+			keyText.TextTransparency = 0
+			textbox.TextTransparency = 0
+			
+		else
+			-- Reduz gradualmente a transparência
+			confirmButton.Visible = true
+			textbox.Visible = true
+			confirmButton.BackgroundTransparency -= 0.1
+			confirmButton.TextTransparency -= 0.1
+			keyText.TextTransparency -= 0.1
+			textbox.TextTransparency -= 0.1
+			
+		end
+	
+	until confirmButton.BackgroundTransparency <= 0 and confirmButton.TextTransparency <= 0 and keyText.TextTransparency <= 0
+	
+	-- Loop para aumentar a transparência do TextButton e do KeyText de volta a 1
+	
+end
+coroutine.wrap(AAVBZUC_fake_script)()
