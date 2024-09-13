@@ -520,6 +520,7 @@ local function LWNIUZC_fake_script() -- ConfirmKey.LocalScript
 			script.Parent.Parent.A:Destroy()
 			script.Parent.Parent.S:Destroy()
 			script.Parent.Parent.Visual.Visible = true
+                          HideVisual.Visible = true
 			script.Parent.Parent.Templatewindow:Destroy()
 			script.Parent.Parent.ConfirmKey:Destroy()
 			
