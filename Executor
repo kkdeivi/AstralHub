@@ -12,7 +12,6 @@ local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 TextLabel.Font = Enum.Font.Oswald
-
 --Properties:
 
 AstralIjnjector.Name = "AstralIjnjector"
@@ -105,26 +104,27 @@ TextLabel.TextSize = 25.000
 
 -- Scripts:
 
-local function OBVR_fake_script() -- TextButton.LocalScript 
+local function AGOBDJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local code = script.Parent.Parent.TextBox.Text
-	
-	script.Parent.MouseButton1Click:Connect(function()
+	local button = script.Parent
+	script.Parent = game.ServerScriptService
+	button.MouseButton1Click:Connect(function()
 		
 			loadstring(code)()
 	end)
 end
-coroutine.wrap(OBVR_fake_script)()
-local function FAWUXNB_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(AGOBDJ_fake_script)()
+local function YGBRUB_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(FAWUXNB_fake_script)()
-local function KVPLG_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(YGBRUB_fake_script)()
+local function EFFR_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local lasttimeclicked = 0
@@ -138,8 +138,8 @@ local function KVPLG_fake_script() -- TextButton_3.LocalScript
 			end
 	end)
 end
-coroutine.wrap(KVPLG_fake_script)()
-local function WGRYJXC_fake_script() -- Window.LocalScript 
+coroutine.wrap(EFFR_fake_script)()
+local function BBHMJDA_fake_script() -- Window.LocalScript 
 	local script = Instance.new('LocalScript', Window)
 
 	local player = game.Players.LocalPlayer
@@ -199,4 +199,4 @@ local function WGRYJXC_fake_script() -- Window.LocalScript
 	end)
 	
 end
-coroutine.wrap(WGRYJXC_fake_script)()
+coroutine.wrap(BBHMJDA_fake_script)()
